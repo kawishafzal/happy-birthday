@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Birthday My Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Music (assets/music.mp3) -->
+  <audio id="bg-music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Floating Music Mute/Unmute Button -->
+  <button id="music-toggle" class="music-btn hidden" aria-label="Toggle Music">🔊</button>
+
+  <!-- SCREEN 1: PASSCODE LOCK SCREEN -->
+  <section id="lock-screen" class="screen active">
+    <div class="glass-card">
+      <div class="heart-pulse">❤️</div>
+      <h2>A Little Surprise For You</h2>
+      <p class="subtitle">Enter our special date to unlock (DDMM)</p>
+      <input type="password" id="passcode-input" maxlength="4" inputmode="numeric" placeholder="••••" />
+      <p id="error-msg" class="error-text"></p>
+      <button id="unlock-btn" class="primary-btn">Unlock Surprise ✨</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 2: INTERACTIVE CAKE & MIC BLOW -->
+  <section id="cake-screen" class="screen">
+    <div class="content-wrapper">
+      <!-- YAHAN APNI GIRLFRIEND KA NAAM LIKHEIN -->
+      <h1 class="script-title">Happy Birthday, <span id="gf-name">My Love</span>!</h1>
+      <p id="instruction-text" class="subtitle">Make a wish & blow into your phone mic to blow out the candle 🎂</p>
+
+      <!-- Animated Cake -->
+      <div class="cake-container">
+        <div class="cake">
+          <div class="plate"></div>
+          <div class="layer layer-bottom"></div>
+          <div class="layer layer-middle"></div>
+          <div class="layer layer-top"></div>
+          <div class="icing"></div>
+          <div class="drip drip1"></div>
+          <div class="drip drip2"></div>
+          <div class="drip drip3"></div>
+          <div class="candle">
+            <div id="flame" class="flame"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mic Visualizer & Fallback Button -->
+      <div id="mic-controls">
+        <div class="mic-bar-container">
+          <div id="mic-level" class="mic-level"></div>
+        </div>
+        <button id="manual-blow-btn" class="secondary-btn">Or Tap Here to Blow Candle 💨</button>
+      </div>
+
+      <!-- Post-Blow Next Button -->
+      <div id="after-blow-box" class="hidden">
+        <p class="wish-granted">Yay! May all your wishes come true! 🎉💖</p>
+        <button id="to-album-btn" class="primary-btn">See Our Memories 📸</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 3: PHOTO & VIDEO ALBUM + LOVE NOTE -->
+  <section id="album-screen" class="screen">
+    <div class="album-header">
+      <h2 class="script-title">Our Beautiful Moments</h2>
+      <p class="subtitle">Swipe or tap arrows to relive our memories</p>
+    </div>
+
+    <!-- Polaroid Carousel -->
+    <div class="carousel-container">
+      <button id="prev-btn" class="nav-arrow">❮</button>
+      <div id="media-card" class="polaroid-card">
+        <!-- Media (Photo/Video) JS ke zariye yahan load hoga -->
+      </div>
+      <button id="next-btn" class="nav-arrow">❯</button>
+    </div>
+    <div id="dots-container" class="dots"></div>
+
+    <!-- Final Love Letter Card -->
+    <div class="love-letter glass-card">
+      <h3>For You, Always ❤️</h3>
+      <p>
+        Happy Birthday to the person who makes my world brighter every single day. 
+        Thank you for every laugh, every late-night talk, and every memory we've built together. 
+        Here's to many more birthdays side by side!
+      </p>
+      <button id="hug-btn" class="primary-btn">Send a Virtual Hug 🤗</button>
+    </div>
+  </section>
+
+  <!-- Confetti Library (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

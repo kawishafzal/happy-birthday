@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #2b1055, #120428 80%);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.script-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #ff9a9e;
+  text-shadow: 0 2px 10px rgba(255, 154, 158, 0.4);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #d8c8f0;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Screens Management */
+.screen {
+  display: none;
+  min-height: 100vh;
+  padding: 24px 18px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.screen.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  padding: 30px 22px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.heart-pulse {
+  font-size: 3rem;
+  animation: pulse 1.4s infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Inputs & Buttons */
+#passcode-input {
+  width: 150px;
+  padding: 12px;
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+  text-align: center;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 154, 158, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.error-text {
+  color: #ff6b81;
+  font-size: 0.85rem;
+  min-height: 20px;
+  margin-bottom: 10px;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 117, 140, 0.4);
+  transition: transform 0.2s;
+}
+
+.primary-btn:active {
+  transform: scale(0.95);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffdde1;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.music-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* CSS Birthday Cake */
+.cake-container {
+  margin: 40px auto 25px;
+  position: relative;
+  height: 200px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cake {
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+
+.plate {
+  width: 230px;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.layer {
+  position: absolute;
+  width: 200px;
+  border-radius: 12px 12px 4px 4px;
+}
+
+.layer-bottom {
+  height: 45px;
+  bottom: 12px;
+  background: #ff758c;
+}
+
+.layer-middle {
+  height: 40px;
+  bottom: 57px;
+  width: 170px;
+  left: 15px;
+  background: #ff9a9e;
+}
+
+.layer-top {
+  height: 35px;
+  bottom: 97px;
+  width: 140px;
+  left: 30px;
+  background: #fecfef;
+}
+
+.icing {
+  position: absolute;
+  bottom: 124px;
+  left: 30px;
+  width: 140px;
+  height: 12px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.candle {
+  position: absolute;
+  bottom: 132px;
+  left: 94px;
+  width: 12px;
+  height: 42px;
+  background: repeating-linear-gradient(45deg, #fff, #fff 5px, #ff4d6d 5px, #ff4d6d 10px);
+  border-radius: 4px;
+}
+
+.flame {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 22px;
+  background: radial-gradient(ellipse at bottom, #fff 10%, #ffeb3b 45%, #ff9800 85%, transparent 100%);
+  border-radius: 50% 50% 35% 35%;
+  box-shadow: 0 0 18px #ff9800, 0 0 35px #ffeb3b;
+  animation: flicker 0.15s infinite alternate;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.flame.out {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.1);
+}
+
+@keyframes flicker {
+  0% { transform: translateX(-50%) scale(1) rotate(-2deg); }
+  100% { transform: translateX(-50%) scale(1.08) rotate(2deg); }
+}
+
+/* Mic Meter */
+.mic-bar-container {
+  width: 180px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mic-level {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff9a9e, #ffeb3b);
+  transition: width 0.08s linear;
+}
+
+.wish-granted {
+  font-size: 1.1rem;
+  color: #ffeb3b;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Screen 3: Polaroid Carousel */
+#album-screen {
+  justify-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.polaroid-card {
+  background: #fff;
+  color: #222;
+  padding: 12px 12px 18px;
+  border-radius: 14px;
+  width: 280px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.polaroid-card img,
+.polaroid-card video {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  background: #111;
+}
+
+.polaroid-caption {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 12px;
+}
+
+.polaroid-date {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 2px;
+}
+
+.nav-arrow {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  margin: 12px 0 28px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dot.active {
+  background: #ff758c;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.love-letter h3 {
+  color: #ff9a9e;
+  margin-bottom: 10px;
+}
+
+.love-letter p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #f3e8ff;
+  margin-bottom: 18px;
+}
+
+/* Floating Hug Hearts */
+.floating-heart {
+  position: fixed;
+  bottom: 20px;
+  font-size: 2rem;
+  pointer-events: none;
+  animation: floatUp 2.5s ease-out forwards;
+  z-index: 999;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(0.8); opacity: 1; }
+  100% { transform: translateY(-80vh) scale(1.6); opacity: 0; }
+}
