@@ -8,24 +8,23 @@ const CONFIG = {
         {
       type: "image",
       src: "photo5.jpeg",
-      caption: "Tum Birthday manati ho is duniya mein aany ki khushi mein, but main tumhari birthday is liye manata hoon k tum meri zindagi mein aii is liye mere liye tumhari birthday 24 ko nahi balky 25 ko hai yaani us din jis din tum meri zindagi mein aii 🥰",
+      caption: "Tum Birthday manati ho is duniya mein aany ki khushi mein, but main tumhari birthday is liye manata hoon k tum meri zindagi mein aii is liye mere liye tumhari birthday 24 ko nahi balky 25 ko hai yaani us din jis din tum meri zindagi mein aii 🥰"
     }
     {
       type: "image",
       src: "photo1.jpeg",
       caption: "Hamesha mere pass rehna ❤️",
-    },
+    }
     {
       type: "video",
       src: "video.mp4",
-      caption: "My favorite smile in the world ✨",
+      caption: "My favorite smile in the world ✨"
       date: "Unforgettable Day"
-    },
+    }
     {
       type: "image",
       src: "photo2.jpg",
-      caption: "Hamesha Meri Rehna 🥰",
-      
+      caption: "Hamesha Meri Rehna 🥰"  
     }
     {
       type: "image",
@@ -36,37 +35,32 @@ const CONFIG = {
     {
       type: "image",
       src: "photo4.jpeg",
-      caption: "Tum kabhi shayad kabhi Jaan Nahi sakti pyar krti ho main us se bhi zyada tum se karta hoon 🥰",
-      
-    }    {
+      caption: "Tum kabhi shayad kabhi Jaan Nahi sakti pyar krti ho main us se bhi zyada tum se karta hoon 🥰"  
+    }
+    {
       type: "image",
       src: "photo7.jpeg",
-      caption: "jis din tum naraz ho jati ho aise lgta hai main bht timse se khushiya dekhi he nahi hain",
-      
+      caption: "jis din tum naraz ho jati ho aise lgta hai main bht timse se khushiya dekhi he nahi hain"  
     }
     {
       type: "image",
       src: "photo6.jpeg",
-      caption: "Tumhary hony se he meri zindagi mein sari khusiyan hain",
-      
+      caption: "Tumhary hony se he meri zindagi mein sari khusiyan hain"      
     }
     {
       type: "image",
       src: "photo8.jpeg",
-      caption: "in khushiyo mo meri zindagi mein permanent kr do or hmesha keliye meri ho jao na"
-      
+      caption: "in khushiyo mo meri zindagi mein permanent kr do or hmesha keliye meri ho jao na" 
     }
     {
       type: "image",
       src: "photo9.jpeg",
-      caption: "please meri ho jao na jaldi se 🥰",
-      
+      caption: "please meri ho jao na jaldi se 🥰" 
     }
     {
       type: "image",
       src: "photol.jpeg",
-      caption: "or haan Suno I LOVE YOU TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO 🥰",
-      
+      caption: "or haan Suno I LOVE YOU TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO 🥰" 
     }
     // Jitni chahein mazeed photos/videos is tarah add kar sakte hain
   ]
