@@ -3,7 +3,7 @@
 // ==========================================
 const CONFIG = {
   girlfriendName: "Meri pyari NISHA (Mera Issue)",   // Unka naam yahan likhein
-  passcode: "NiKa",            // 4-digit passcode (e.g., birthday date DDMM)
+  passcode: "2509",            // 4-digit passcode (e.g., birthday date DDMM)
   memories: [
         {
       type: "image",
