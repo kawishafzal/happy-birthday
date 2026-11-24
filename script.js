@@ -5,62 +5,61 @@ const CONFIG = {
   girlfriendName: "Meri pyari NISHA (Mera Issue)",   // Unka naam yahan likhein
   passcode: "2509",            // 4-digit passcode (e.g., birthday date DDMM)
   memories: [
-        {
+    {
       type: "image",
       src: "photo5.jpeg",
       caption: "Tum Birthday manati ho is duniya mein aany ki khushi mein, but main tumhari birthday is liye manata hoon k tum meri zindagi mein aii is liye mere liye tumhari birthday 24 ko nahi balky 25 ko hai yaani us din jis din tum meri zindagi mein aii 🥰"
-    }
+    },
     {
       type: "image",
       src: "photo1.jpeg",
-      caption: "Hamesha mere pass rehna ❤️",
-    }
+      caption: "Hamesha mere pass rehna ❤️"
+    },
     {
       type: "video",
       src: "video.mp4",
-      caption: "My favorite smile in the world ✨"
+      caption: "My favorite smile in the world ✨",
       date: "Unforgettable Day"
-    }
+    },
     {
       type: "image",
       src: "photo2.jpg",
-      caption: "Hamesha Meri Rehna 🥰"  
-    }
+      caption: "Hamesha Meri Rehna 🥰"
+    },
     {
       type: "image",
       src: "photo3.jpeg",
-      caption: "Sada Salamat Raho Or Bas Meri Raho 🥰",
-      
-    }
+      caption: "Sada Salamat Raho Or Bas Meri Raho 🥰"
+    },
     {
       type: "image",
       src: "photo4.jpeg",
-      caption: "Tum kabhi shayad kabhi Jaan Nahi sakti pyar krti ho main us se bhi zyada tum se karta hoon 🥰"  
-    }
+      caption: "Tum kabhi shayad kabhi Jaan Nahi sakti pyar krti ho main us se bhi zyada tum se karta hoon 🥰"
+    },
     {
       type: "image",
       src: "photo7.jpeg",
-      caption: "jis din tum naraz ho jati ho aise lgta hai main bht timse se khushiya dekhi he nahi hain"  
-    }
+      caption: "jis din tum naraz ho jati ho aise lgta hai main bht timse se khushiya dekhi he nahi hain"
+    },
     {
       type: "image",
       src: "photo6.jpeg",
-      caption: "Tumhary hony se he meri zindagi mein sari khusiyan hain"      
-    }
+      caption: "Tumhary hony se he meri zindagi mein sari khusiyan hain"
+    },
     {
       type: "image",
       src: "photo8.jpeg",
-      caption: "in khushiyo mo meri zindagi mein permanent kr do or hmesha keliye meri ho jao na" 
-    }
+      caption: "in khushiyo mo meri zindagi mein permanent kr do or hmesha keliye meri ho jao na"
+    },
     {
       type: "image",
       src: "photo9.jpeg",
-      caption: "please meri ho jao na jaldi se 🥰" 
-    }
+      caption: "please meri ho jao na jaldi se 🥰"
+    },
     {
       type: "image",
       src: "photol.jpeg",
-      caption: "or haan Suno I LOVE YOU TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO 🥰" 
+      caption: "or haan Suno I LOVE YOU TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO 🥰"
     }
     // Jitni chahein mazeed photos/videos is tarah add kar sakte hain
   ]
@@ -166,15 +165,17 @@ function blowOutCandle() {
   document.getElementById("after-blow-box").classList.remove("hidden");
 
   // Confetti Celebration
-  confetti({
-    particleCount: 120,
-    spread: 80,
-    origin: { y: 0.6 }
-  });
-  setTimeout(() => {
-    confetti({ particleCount: 80, angle: 60, spread: 55, origin: { x: 0 } });
-    confetti({ particleCount: 80, angle: 120, spread: 55, origin: { x: 1 } });
-  }, 400);
+  if (typeof confetti === "function") {
+    confetti({
+      particleCount: 120,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
+    setTimeout(() => {
+      confetti({ particleCount: 80, angle: 60, spread: 55, origin: { x: 0 } });
+      confetti({ particleCount: 80, angle: 120, spread: 55, origin: { x: 1 } });
+    }, 400);
+  }
 }
 
 document.getElementById("manual-blow-btn").addEventListener("click", blowOutCandle);
@@ -220,7 +221,7 @@ function renderMemory(index) {
 
   const dt = document.createElement("p");
   dt.className = "polaroid-date";
-  dt.textContent = item.date;
+  dt.textContent = item.date || "";
 
   mediaCard.appendChild(cap);
   mediaCard.appendChild(dt);
