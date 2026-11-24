@@ -11,7 +11,7 @@ const CONFIG = {
       caption: "Tum Birthday manati ho is duniya mein aany ki khushi mein, but main tumhari birthday is liye manata hoon k tum meri zindagi mein aii is liye mere liye tumhari birthday 24 ko nahi balky 25 ko hai yaani us din jis din tum meri zindagi mein aii 🥰",
       
     }
-     {
+    {
       type: "image",
       src: "photo1.jpeg",
       caption: "Hamesha mere pass rehna ❤️",
