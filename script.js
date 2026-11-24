@@ -7,65 +7,65 @@ const CONFIG = {
   memories: [
         {
       type: "image",
-      src: "assets/photo5.jpeg",
+      src: "photo5.jpeg",
       caption: "Tum Birthday manati ho is duniya mein aany ki khushi mein, but main tumhari birthday is liye manata hoon k tum meri zindagi mein aii is liye mere liye tumhari birthday 24 ko nahi balky 25 ko hai yaani us din jis din tum meri zindagi mein aii 🥰",
       
     }
      {
       type: "image",
-      src: "assets/photo1.jpeg",
+      src: "photo1.jpeg",
       caption: "Hamesha mere pass rehna ❤️",
     },
     {
       type: "video",
-      src: "assets/video.mp4",
+      src: "video.mp4",
       caption: "My favorite smile in the world ✨",
       date: "Unforgettable Day"
     },
     {
       type: "image",
-      src: "assets/photo2.jpg",
+      src: "photo2.jpg",
       caption: "Hamesha Meri Rehna 🥰",
       
     }
     {
       type: "image",
-      src: "assets/photo3.jpeg",
+      src: "photo3.jpeg",
       caption: "Sada Salamat Raho Or Bas Meri Raho 🥰",
       
     }
     {
       type: "image",
-      src: "assets/photo4.jpeg",
+      src: "photo4.jpeg",
       caption: "Tum kabhi shayad kabhi Jaan Nahi sakti pyar krti ho main us se bhi zyada tum se karta hoon 🥰",
       
     }    {
       type: "image",
-      src: "assets/photo7.jpeg",
+      src: "photo7.jpeg",
       caption: "jis din tum naraz ho jati ho aise lgta hai main bht timse se khushiya dekhi he nahi hain",
       
     }
     {
       type: "image",
-      src: "assets/photo6.jpeg",
+      src: "photo6.jpeg",
       caption: "Tumhary hony se he meri zindagi mein sari khusiyan hain",
       
     }
     {
       type: "image",
-      src: "assets/photo8.jpeg",
+      src: "photo8.jpeg",
       caption: "in khushiyo mo meri zindagi mein permanent kr do or hmesha keliye meri ho jao na"
       
     }
     {
       type: "image",
-      src: "assets/photo9.jpeg",
+      src: "photo9.jpeg",
       caption: "please meri ho jao na jaldi se 🥰",
       
     }
     {
       type: "image",
-      src: "assets/photol.jpeg",
+      src: "photol.jpeg",
       caption: "or haan Suno I LOVE YOU TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO 🥰",
       
     }
